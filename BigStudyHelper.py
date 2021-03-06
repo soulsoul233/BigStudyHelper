@@ -68,4 +68,4 @@ if __name__ == '__main__':
     main()
 
 def main_handler(event, context):
-    start()
+    main()
