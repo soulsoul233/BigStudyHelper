@@ -19,11 +19,8 @@ def Ding(key, secret, content):
     tmp = "{\"msgtype\": \"text\", \"text\": {\"content\": \"" + content + "\"}}"
     r.post(url, data=json.dumps(eval(tmp)), headers=head)
 
-def main():
-    key = ""
-    secret = ""
-    name = "这里填入你的姓名"
-    userID = "这里填入你从微信大学习界面中复制出的链接中userID字段"
+def DoIt(name, userID):
+
     url2 = "http://onestop.jxufe.edu.cn/eos/wx/youthStudy/studyList.jsp?userId=" + userID
     api2 = "http://onestop.jxufe.edu.cn/eos/com.lantuo.bps.youthStudy.stwhttp.biz.ext"
     headers2 = {'Host': 'onestop.jxufe.edu.cn', 'Connection': 'keep-alive', 'Accept': 'application/json, text/plain, */*',
@@ -57,6 +54,22 @@ def main():
                 Flag = 1
         elif I == 6:
             break
+    return result
+
+
+def main():
+    key = "xxxxxxxxxxxxxxxxxxxxxxxxx"
+    secret = "xxxxxxxxxxxxxxxxxxxxxxxxx"
+
+    name = [
+        ("张三", "xxxxxxxxxxxxxxxxxxxxxxxxx"),
+        ("李四", "xxxxxxxxxxxxxxxxxxxxxxxxx"),
+    ]
+
+    for i in range(len(name)):
+        result = DoIt(name[i][0],name[i][1])
+
+
     try:
         Ding(key,secret, result[:-1])
         print("钉钉通知成功!")
