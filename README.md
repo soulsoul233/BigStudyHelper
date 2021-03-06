@@ -10,11 +10,11 @@
 
 
 ### 使用方法
-1,请在'BigStyduHelper.py'第25行填入你的姓名,第26行填入userID
+1,请在'BigStyduHelper.py'第64行至第67行中填入你的姓名与userID信息,支持多人,注意格式.
 
 2,userID是从微信"青年大学习"界面中提取出来的一段形为 "http://onestop.jxufe.edu.cn/eos/wx/youthStudy/studyList.jsp?userId=xxxxxxxxxxxxx" 的网址中xxxxxxxxxxxxx的一部分字符串,通常是以"=="或者"%3D%3D"结尾,请将它填写到代码的相应位置
 
-3,如需要启用钉钉群通知请修改'BigStyduHelper.py'第24行与第25行的钉钉机器人配置信息.
+3,如需要启用钉钉群通知请修改'BigStyduHelper.py'第61行与第62行的钉钉机器人配置信息.
 
 若不填写,则不会开启钉钉群通知,仅本地控制台输出执行结果
 
