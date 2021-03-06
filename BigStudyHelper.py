@@ -58,7 +58,8 @@ def main():
         elif I == 6:
             break
     try:
-        Ding(key,secret,  result)
+        Ding(key,secret, result[:-1])
+        print("钉钉通知成功!")
     except:
         print("未填写钉钉群机器人S/K, 采用本地通知")
         print(result[:-1])
