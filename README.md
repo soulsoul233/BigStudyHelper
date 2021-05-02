@@ -12,7 +12,7 @@
 
 ### 本地版使用方法
 
-+ clone本项目或至[release](https://github.com/FupengWang/BigStudyHelper/releases)界面下载编译好的exe文件
++ clone本项目,本地版位于"Local"目录下或至[release](https://github.com/FupengWang/BigStudyHelper/releases)界面下载编译好的exe文件
 + 打开'setting.config'文件,修改name为你的中文真实姓名,url为从微信"青年大学习"中复制出来的链接,样例可参考默认配置文件
 + clone项目的同志请自行将源代码封装成系统服务项(NSSM);下载编译好的同志请将exe设置成启动项(创建快捷方式,将快捷方式移动到'启动'目录下)
 
